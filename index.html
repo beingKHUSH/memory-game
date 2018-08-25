@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+        <section class="score-panel">
+        	<ul class="stars">
+        	</ul>
+        	<span class="moves"></span> Moves
+            <div class="text-right">
+                <span id="timer">00:00:00</span>    
+                 <div class="restart">
+                    <i class="fa fa-repeat"></i>
+                </div>
+            </div>      
+        </section>
+        <ul class="deck">            
+        </ul>
+    </div>
+
+    <!-- The Win Modal -->
+    <div id="win-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="winning_image text-center">
+                <img src="glitter.png" alt="glitterImage" />    
+            </div>                
+            <p class="modal-text">Congratulations! You Won!</p>
+            <span class="modal-text">Your ScoreBoard:</span>
+            <span id="finalMove" class="modal-text"></span>
+            <ul class="modal-text" id="starRating"></ul> 
+            <span class="modal-text">Stars</span>
+            <p class="modal-text">Time taken by you : <span id="finalTime"></span></p> 
+            <div class="modal-text text-center mt-15">
+                <button id="playAgainBtn" class="play-again">Play Again!</button>   
+            </div>                
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="js/easytimer.min.js"></script> 
+    <script src="js/app.js"></script>
+</body>
+</html>
