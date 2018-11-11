@@ -1,6 +1,6 @@
 Memory Game Project
 
-Classic Memory Game
+Classic Memory Game - https://beingkhush.github.io/memory-game/
 
 How to play
 
